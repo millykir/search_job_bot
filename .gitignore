@@ -1,0 +1,46 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+ENV/
+env/
+*.venv/
+
+# Pytest
+.cache
+.pytest_cache/
+
+# Alembic migrations (если не хотите включать в репозиторий)
+# migrations/
+
+# dotenv
+.env
+
+# VSCode settings
+.vscode/
+
+# Logs
+*.log

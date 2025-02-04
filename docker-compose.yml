@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  bot:
+    build: .
+    container_name: telegram_bot
+    env_file:
+      - .env
+    depends_on:
+      - db
+    restart: always
+
+  db:
+    image: postgres:16.4
+    container_name: postgres_db
+    environment:
+      POSTGRES_USER: job_user
+      POSTGRES_PASSWORD: dsNSMm283290nc
+      POSTGRES_DB: job_bot
+    ports:
+      - "5442:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    restart: always
+
+volumes:
+  pgdata:
