@@ -13,6 +13,8 @@ RUN pip install --upgrade pip==24.0 && pip install -r requirements.txt
 
 COPY . .
 
+RUN chmod +x entrypoint.sh
+
 ENV DATABASE_URL=postgresql://job_user:dsNSMm283290nc@db/job_bot
 
 CMD ["./entrypoint.sh"]
